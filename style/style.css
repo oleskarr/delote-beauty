@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #111111;
+
+}
+
+body {
+    background: url(./img/background.jfif);
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #000000a2;
+    background-blend-mode: color;
+}
+
+main {
+    flex: auto;
+}
+
+header {
+    width: 1280px;
+    margin: 30px auto;
+}
+
+.nav_contact, #menu {
+    display: none;
+}
+
+nav {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo {
+    padding: 0 40px;
+}
+
+#menu:checked ~ .nav_contact {
+    display: flex;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+}
+nav a:hover{
+    color: #CDAA7D;
+    border-bottom: 1px solid #CDAA7D;
+}
+.instagram:hover path{
+    stroke: #CDAA7D;
+}
+.instagram,.icon{
+    border: none !important;
+}
+
+
+.nav_contact {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 400px;
+    background-color: black;
+    flex-direction: column;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    width: 475px;
+    height: 1038px;
+}
+
+.nav_contact label{
+    margin-top: 42px;
+    margin-left: 82px;
+    position: absolute;
+
+}
